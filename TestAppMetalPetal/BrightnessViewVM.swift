@@ -14,12 +14,7 @@ class BrightnessViewVM: ObservableObject {
             throw NSError(domain: "MissingInputImage", code: 0, userInfo: nil)
         }
         let imageFromCGImage = MTIImage(cgImage: inputImage, isOpaque: true)
-        let filter = MTIBrightnessFilter()
-        filter.brightness = sliderValue
-        filter.inputImage = imageFromCGImage
-        guard let outputImage = filter.outputImage else {
-            throw NSError(domain: "Cannot conver to output", code: 0, userInfo: nil)
-        }
-        return try self.renderContext.makeCGImage(from: outputImage)
+        let filter = CustomBrightnessFilter.apply(to: imageFromCGImage, brightness: sliderValue)
+        return try self.renderContext.makeCGImage(from: filter)
     }
 }

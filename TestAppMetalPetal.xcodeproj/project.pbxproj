@@ -14,6 +14,8 @@
 		E18C1BA62A72748C003712C7 /* MetalPetal in Frameworks */ = {isa = PBXBuildFile; productRef = E18C1BA52A72748C003712C7 /* MetalPetal */; };
 		E18C1BAA2A72839B003712C7 /* Image+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = E18C1BA92A72839B003712C7 /* Image+Ext.swift */; };
 		E18C1BAC2A7283BF003712C7 /* BrightnessViewVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = E18C1BAB2A7283BF003712C7 /* BrightnessViewVM.swift */; };
+		E18C1BAE2A73B75C003712C7 /* CustomBrightnessFilter.metal in Sources */ = {isa = PBXBuildFile; fileRef = E18C1BAD2A73B75C003712C7 /* CustomBrightnessFilter.metal */; };
+		E18C1BB02A73BBE4003712C7 /* CustomBrightnessFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E18C1BAF2A73BBE4003712C7 /* CustomBrightnessFilter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +27,8 @@
 		E18C1B9E2A72744A003712C7 /* TestAppMetalPetal.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TestAppMetalPetal.entitlements; sourceTree = "<group>"; };
 		E18C1BA92A72839B003712C7 /* Image+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Image+Ext.swift"; sourceTree = "<group>"; };
 		E18C1BAB2A7283BF003712C7 /* BrightnessViewVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrightnessViewVM.swift; sourceTree = "<group>"; };
+		E18C1BAD2A73B75C003712C7 /* CustomBrightnessFilter.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = CustomBrightnessFilter.metal; sourceTree = "<group>"; };
+		E18C1BAF2A73BBE4003712C7 /* CustomBrightnessFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomBrightnessFilter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,7 +64,9 @@
 			children = (
 				E18C1B952A727449003712C7 /* TestAppMetalPetalApp.swift */,
 				E18C1B972A727449003712C7 /* BrightnessView.swift */,
+				E18C1BAF2A73BBE4003712C7 /* CustomBrightnessFilter.swift */,
 				E18C1BAB2A7283BF003712C7 /* BrightnessViewVM.swift */,
+				E18C1BAD2A73B75C003712C7 /* CustomBrightnessFilter.metal */,
 				E18C1BA92A72839B003712C7 /* Image+Ext.swift */,
 				E18C1B992A72744A003712C7 /* Assets.xcassets */,
 				E18C1B9E2A72744A003712C7 /* TestAppMetalPetal.entitlements */,
@@ -153,6 +159,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E18C1BAE2A73B75C003712C7 /* CustomBrightnessFilter.metal in Sources */,
+				E18C1BB02A73BBE4003712C7 /* CustomBrightnessFilter.swift in Sources */,
 				E18C1BAC2A7283BF003712C7 /* BrightnessViewVM.swift in Sources */,
 				E18C1B982A727449003712C7 /* BrightnessView.swift in Sources */,
 				E18C1B962A727449003712C7 /* TestAppMetalPetalApp.swift in Sources */,
@@ -294,6 +302,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
+				MTL_HEADER_SEARCH_PATHS = "$(HEADER_SEARCH_PATHS)";
 				PRODUCT_BUNDLE_IDENTIFIER = musamuss.test.app.TestAppMetalPetal;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -323,6 +332,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
+				MTL_HEADER_SEARCH_PATHS = "$(HEADER_SEARCH_PATHS)";
 				PRODUCT_BUNDLE_IDENTIFIER = musamuss.test.app.TestAppMetalPetal;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
